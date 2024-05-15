@@ -3,11 +3,14 @@ public class MainClass {
         printThreeWords();
         checkSumSign();
         printColor();
-        compareNumbers();
+        numbersComparison();
+        sumInRangeBetween(1,11);
+        positiveVsNegative(-1);
+
     }
 
     public static void printThreeWords() {
-        System.out.println("1)");
+        System.out.println("1)"); //Три слова
         System.out.println("Orange");
         System.out.println("Banana");
         System.out.println("Apple");
@@ -16,7 +19,7 @@ public class MainClass {
 
 
     public static void checkSumSign() {
-        System.out.println("2)");
+        System.out.println("2)"); //Сумма переменных
         int a = 9;
         int b = 7;
 
@@ -31,7 +34,7 @@ public class MainClass {
     }
 
     public static void printColor() {
-        System.out.println("3)");
+        System.out.println("3)"); //Цвет значений
         int value = 101;
 
         if (value <= 0) {
@@ -45,8 +48,8 @@ public class MainClass {
         }
     }
 
-    public static void compareNumbers() {
-        System.out.println("4)");
+    public static void numbersComparison() {
+        System.out.println("4)"); //Сравнить переменные
         int a = 10;
         int b = 10;
 
@@ -58,4 +61,30 @@ public class MainClass {
 
         }
     }
+
+    public static void sumInRangeBetween(int a, int b) {
+        System.out.println("5)");
+        int sum = a + b;
+
+        if (sum > 10 && sum <= 20) {
+            System.out.println(true);
+        }
+        else {
+            System.out.println(false);
+        }
+    }
+
+    public static void positiveVsNegative(int num) {
+        System.out.println("6)");
+        if (num >=0) {
+            System.out.println("Положительное значение");
+        }
+        else {
+            System.out.println("Отрицательное значение");
+        }
+    }
+
+    public static void
+
+
 }
