@@ -20,7 +20,7 @@ public class MainClass {
     }
 
     public static void printThreeWords() {
-        System.out.println("1)"); //
+        System.out.println("1)");
         System.out.println("Orange");
         System.out.println("Banana");
         System.out.println("Apple");
@@ -29,7 +29,7 @@ public class MainClass {
 
 
     public static void checkSumSign() {
-        System.out.println("2)"); //
+        System.out.println("2)");
         int a = 9;
         int b = 7;
 
@@ -44,7 +44,7 @@ public class MainClass {
     }
 
     public static void printColor() {
-        System.out.println("3)"); //
+        System.out.println("3)");
         int value = 101;
 
         if (value <= 0) {
@@ -59,7 +59,7 @@ public class MainClass {
     }
 
     public static void compareNumbers() {
-        System.out.println("4)"); //
+        System.out.println("4)");
         int a = 10;
         int b = 10;
 
@@ -73,7 +73,7 @@ public class MainClass {
     }
 
     public static void sumInRangeBetween(int a, int b) {
-        System.out.println("5)"); //
+        System.out.println("5)");
         int sum = a + b;
 
         if (sum > 10 && sum <= 20) {
@@ -85,7 +85,7 @@ public class MainClass {
     }
 
     public static void positiveVsNegative(int num) {
-        System.out.println("6)"); //
+        System.out.println("6)");
         if (num >=0) {
             System.out.println("Положительное значение");
         }
@@ -95,7 +95,7 @@ public class MainClass {
     }
 
     public static void negativeNum(int a) {
-        System.out.println("7)"); //
+        System.out.println("7)");
         if (a < 0) {
             System.out.println("true");
         }
@@ -105,7 +105,7 @@ public class MainClass {
     }
 
     public static void printStringMultipleTimes(String text, int num) {
-        System.out.println("8)"); //
+        System.out.println("8)");
         for (int i = 0; i < num; i++)
             System.out.println(text);
     }
