@@ -7,6 +7,15 @@ public class MainClass {
         sumInRangeBetween(1,11);
         positiveVsNegative(-1);
         negativeNum(-7);
+        printStringMultipleTimes("Greetings, realm!",3);
+        boolean leapYear = leapYear(2015);
+        System.out.println(leapYear);
+        arrayFlip();
+        arrayFilled();
+        multiplyTimesTwo();
+        squArray();
+        OneDeeArray(3,7);
+
 
     }
 
@@ -27,10 +36,10 @@ public class MainClass {
         int sum = a + b;
 
         if (sum >= 0) {
-            System.out.println("Сумма положительная");
+            System.out.println("Положительная сумма");
         }
         else {
-            System.out.println("Сумма отрицательная");
+            System.out.println("Отрицательная сумма");
         }
     }
 
@@ -95,5 +104,100 @@ public class MainClass {
         }
     }
 
+    public static void printStringMultipleTimes(String text, int num) {
+        System.out.println("8)"); //
+        for (int i = 0; i < num; i++)
+            System.out.println(text);
+    }
 
+    public static boolean leapYear(int year) {
+        System.out.println("9)");
+        if (year % 400 == 0) {
+            return true;
+        }
+        else if (year % 100 == 0) {
+            return false;
+        }
+        else if (year % 4 == 0) {
+            return true;
+        }
+        else {
+            return false;
+        }
+
+    }
+
+    public static void arrayFlip() {
+        System.out.println("10)");
+        int[] array = {1, 0, 1, 0, 1, 0, 1, 0, 1, 0};
+
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == 0) {
+                array[i] = 1;
+            }
+            else if (array[i] == 1) {
+                array[i] = 0;
+            }
+        }
+
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + "");
+        }
+    }
+
+    public static void arrayFilled() {
+        System.out.println("\n11)");
+        int[] array = new int[100];
+
+        for (int i = 0; i < array.length; i++) {
+            array[i] = i + 1;
+        }
+        for (int num : array) {
+            System.out.print(num + ", \n");
+        }
+    }
+
+    public static void multiplyTimesTwo() {
+        System.out.println("12)");
+        int[] numbers = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
+
+        for (int i = 0; i < numbers.length; i++) {
+            if (numbers[i] < 6) {
+                numbers[i] *= 2;
+            }
+        }
+
+        System.out.print("x2: ");
+        for (int number : numbers) {
+            System.out.print(number + ",");
+        }
+    }
+
+    public static void squArray() {
+        System.out.println("\n13)");
+        int n = 4;
+        int[][] array = new int[n][n];
+
+        for (int i = 0; i < n; i++) {
+            array[i][i] = 1;
+        }
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                System.out.print(array[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    public static int[] OneDeeArray(int len, int initialValue) {
+        System.out.println("14)");
+        int[] array = new int[len];
+        for (int i = 0; i < len; i++) {
+            array[i] = initialValue;
+        }
+        for (int value : array) {
+            System.out.print(value + " ");
+        }
+        return array;
+    }
 }
