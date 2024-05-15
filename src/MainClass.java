@@ -3,7 +3,7 @@ public class MainClass {
         printThreeWords();
         checkSumSign();
         printColor();
-        numbersComparison();
+        compareNumbers();
         sumInRangeBetween(1,11);
         positiveVsNegative(-1);
         negativeNum(-7);
@@ -58,7 +58,7 @@ public class MainClass {
         }
     }
 
-    public static void numbersComparison() {
+    public static void compareNumbers() {
         System.out.println("4)"); //
         int a = 10;
         int b = 10;
